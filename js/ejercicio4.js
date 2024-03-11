@@ -22,4 +22,7 @@ function findMatches( array1, array2 ) {
   
   let student1Courses = ['Math', 'English', 'Programming'];
   let student2Courses = ['Geography', 'Spanish', 'Programming'];
-  console.log( findMatchesFilter( student1Courses, student2Courses ) );
+  let matches = findMatchesFilter( student1Courses, student2Courses )
+  console.log( matches );
+  document.getElementById("ejercicio4").innerHTML += findMatchesFilter( student1Courses, student2Courses );
+  

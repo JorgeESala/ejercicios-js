@@ -28,4 +28,6 @@ function bubbleSort( array ){
     return array;
 }
 let list = [3, 6, 12, 5, 100, 1 ];
-console.log( bubbleSort(list) );
+const sortedList = bubbleSort(list)
+console.log( sortedList );
+document.getElementById( "ejercicio6").innerHTML += sortedList.join(" ");

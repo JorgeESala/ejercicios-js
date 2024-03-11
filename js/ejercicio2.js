@@ -10,4 +10,6 @@ function doubleArrayNumbers( array ){
     return array.map( element => element*2 );
 }
 const nums = [1,2,3,4,5]
-console.log( doubleArrayNumbers(nums) );
+const result2 = doubleArrayNumbers(nums);
+console.log( result2 );
+document.getElementById( "ejercicio2").innerHTML += result2;

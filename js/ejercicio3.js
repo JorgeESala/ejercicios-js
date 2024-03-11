@@ -28,3 +28,4 @@ const sum = sumAllElements(numbers);
 const product = multiplyAllElements(numbers);
 console.log( `The sum of all elements is ${sum}
 The product of all elements is ${product}` );
+document.getElementById("ejercicio3").innerHTML += `The sum of all elements is ${sum} <br>The product of all elements is ${product}`

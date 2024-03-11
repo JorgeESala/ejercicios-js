@@ -13,4 +13,7 @@ function printOutString( array ) {
     return array.join(" ");
   }
   let sentence = ["This", "is", "a", "sentence."];
-  console.log(printOutString(sentence));
+  const result1= printOutString(sentence);
+  console.log(result1);
+
+  document.getElementById("ejercicio1").innerHTML += result1;

@@ -14,7 +14,7 @@ let people = ["Maria", "Dani", "Luis", "Juan", "Camila"];
 
 // 1. Write a command that prints out all of the people in the list.
 console.log(people);
-
+document.getElementById("ejercicio5").innerHTML += `${people.join(" ")}`;
 // 2. Write the command to remove "Dani" from the array.
 people.splice( people.indexOf("Dani"),1);
 
@@ -30,9 +30,12 @@ people.push("Jorge");
 // 6. Using a loop, iterate through this array and after console.log "Maria", exit from the loop. (usar break)
 for(person of people){
     console.log(person);
+    document.getElementById("ejercicio5").innerHTML += `<br>${person}`;
     if(person === "Maria")
     break;
 }
 
 // 7. Write the command that gives the indexOf where "Maria" is located.
-console.log(people.indexOf("Maria"));
+const index = people.indexOf("Maria");
+console.log();
+document.getElementById("ejercicio5").innerHTML += `<br> index Maria = ${index}`;
